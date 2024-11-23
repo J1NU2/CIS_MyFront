@@ -4,10 +4,8 @@ let mail_empty = document.getElementById("mail_empty");
 window.onload = () => {
     if (mail_row.rows.length <= 0) {
         mail_empty.style.display = "";
-        console.log("보여짐")
     } else {
         mail_empty.style.display = "none";
-        console.log("숨김")
     }
 }
 

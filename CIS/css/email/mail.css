@@ -5,7 +5,9 @@ section {
     border-radius: 15px;
     padding: 10px;
 
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .mail_container {
     width: 97.3%;
@@ -22,15 +24,29 @@ section {
 .mail_btn input {
     font-size: 20px;
     font-weight: bold;
-    border: 1px solid black;
     border-radius: 15px;
     margin-right: 25px;
     padding: 10px;
 
     cursor: pointer;
 }
-.mail_btn input:hover {
+.mail_delete {
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+.mail_delete:hover {
+    background-color: tomato;
+    border: 1px solid tomato;
+}
+.mail_send {
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid dodgerblue;
+}
+.mail_send:hover, .mail_allread:hover, .mail_unread:hover, .mail_read:hover {
     background-color: skyblue;
+    border: 1px solid skyblue;
 }
 .mail_list {
     border: 1px solid black;
